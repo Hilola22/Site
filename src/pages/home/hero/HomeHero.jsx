@@ -8,7 +8,7 @@ const HomeHero = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-4xl md:text-[62px] font-semibold">
-              This is a Fake API Informations
+              There are Fake API Informations
             </h1>
             <p className="text-base md:text-[18px] mt-5 text-gray-700">
               Welcome to our platform! Here you can explore fake API data for
