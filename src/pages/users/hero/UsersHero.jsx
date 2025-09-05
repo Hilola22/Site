@@ -18,6 +18,7 @@ const UsersHero = () => {
   return (
     <section className="py-8 pt-30 bg-gray-50">
       <div className="container mx-auto px-4">
+        <h2 className="mb-10 text-center text-black text-3xl font-bold">Users</h2>
         {loading && <p className="text-center">Loading...</p>}
         {err && <p className="text-red-500 text-center">{err}</p>}
 
@@ -39,7 +40,7 @@ const UsersHero = () => {
                   {user.address?.city}, {user.address?.state}
                 </p>
               </div>
-            </Link> 
+            </Link>
           ))}
         </div>
       </div>

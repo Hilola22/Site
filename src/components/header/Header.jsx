@@ -1,22 +1,31 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const links = [
     { name: "Home", path: "/" },
     { name: "Users", path: "/users" },
+    { name: "Products", path: "/products" },
     { name: "Posts", path: "/posts" },
     { name: "About", path: "/about" },
     { name: "Login", path: "/login" },
   ];
 
   return (
-    <header className={`w-full bg-white shadow-md fixed top-0 left-0 z-50`}>
+    <header
+      className={`w-full bg-white shadow-md fixed top-0 left-0 z-50 select-none`}
+    >
       <div className="container mx-auto px-4 flex justify-between items-center h-20">
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <img
+            onClick={() => navigate("/")}
+            src={logo}
+            alt="Logo"
+            className="h-10 w-auto"
+          />
         </div>
 
         <div className="md:hidden">

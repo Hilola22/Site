@@ -9,6 +9,8 @@ import NotFound from './not-found/NotFound'
 import Posts from './posts'
 import PostsDetail from './posts-detail'
 import UsersDetail from './users-detail'
+import Products from "./products";
+import ProductDetail from "./products-detail";
 
 const AppRouter = () => {
   return (
@@ -21,6 +23,8 @@ const AppRouter = () => {
           <Route path="/about" element={<About />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/users/:id" element={<UsersDetail />} />
           <Route path="/posts/:id" element={<PostsDetail />} />
         </Route>
@@ -30,6 +34,6 @@ const AppRouter = () => {
       </Routes>
     </React.Fragment>
   );
-}
+};
 
 export default AppRouter

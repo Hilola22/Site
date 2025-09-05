@@ -23,9 +23,9 @@ const Login = () => {
       <div className="w-[350px] bg-white rounded-md p-8 shadow-lg">
         <h2 className="text-center text-2xl font-semibold mb-6">Login Form</h2>
         <form>
-          <label className="block text-sm mb-1 font-sans">Email or Phone</label>
+          <label className="block text-sm mb-1 font-sans">Email</label>
           <input
-            type="text"
+            type="email"
             required
             className="w-full h-10 mb-4 px-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-400"
           />

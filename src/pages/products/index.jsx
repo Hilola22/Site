@@ -1,9 +1,12 @@
 import React from 'react'
+import ProductHero from "./hero/ProductHero";
 
-const index = () => {
+const Products = () => {
   return (
-    <div>index</div>
-  )
-}
+    <>
+      <ProductHero />
+    </>
+  );
+};
 
-export default index
+export default Products;

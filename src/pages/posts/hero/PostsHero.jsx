@@ -30,7 +30,7 @@ const PostsHero = () => {
                 <div className="mb-4 flex-grow">
                   <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
                   <p className="text-gray-600 text-sm overflow-hidden h-[80px]">
-                    {post.body} 
+                    {post.body}
                   </p>
                 </div>
 
